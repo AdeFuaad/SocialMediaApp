@@ -45,7 +45,7 @@ const Navbar = () => {
         <Typography
           fontWeight="bold"
           fontSize="clamp(1rem, 2rem, 2.25rem)"
-          color="primary"
+          color="#5077be" // Change the color here
           onClick={() => navigate("/home")}
           sx={{
             "&:hover": {
@@ -54,7 +54,8 @@ const Navbar = () => {
             },
           }}
         >
-          Devpal
+          DevPal
+
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween

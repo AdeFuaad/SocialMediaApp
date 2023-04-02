@@ -2,8 +2,10 @@ import React from "react";
 import {
   EditOutlined,
   DeleteOutlined,
+  AttachFileOutlined,
   GifBoxOutlined,
   ImageOutlined,
+  MicOutlined,
   MoreHorizOutlined,
 } from "@mui/icons-material";
 import {
@@ -35,8 +37,6 @@ const MyPostWidget = ({ picturePath }) => {
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   const mediumMain = palette.neutral.mediumMain;
   const medium = palette.neutral.medium;
-  const [isClip, setIsClip] = useState(false);
-
 
   const handlePost = async () => {
     const formData = new FormData();
@@ -131,20 +131,6 @@ const MyPostWidget = ({ picturePath }) => {
             Image
           </Typography>
         </FlexBetween>
-
-        {isNonMobileScreens ? (
-          <>
-            <FlexBetween gap="0.25rem" onClick={() => setIsClip(!isClip)}>
-              <GifBoxOutlined sx={{ color: mediumMain }} />
-              <Typography color={mediumMain}>Clip</Typography>
-            </FlexBetween>
-          </>
-        ) : (
-          <FlexBetween gap="0.25rem" onClick={() => setIsClip(!isClip)}>
-            <MoreHorizOutlined sx={{ color: mediumMain }} />
-          </FlexBetween>
-        )}
-
         <Button
           disabled={!post}
           onClick={handlePost}
