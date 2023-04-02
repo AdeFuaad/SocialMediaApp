@@ -6,8 +6,6 @@ import Navbar from "scenes/navbar";
 import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
-
-import DirectMessage from "components/DirectMessage"; // Import the DirectMessage component
 import UserWidget from '../../scenes/widgets/UserWidget';
 
 
@@ -48,7 +46,6 @@ const HomePage = () => {
           </Box>
         )}
       </Box>
-      {selectedFriend && <DirectMessage friend={selectedFriend} />} {/* Render DirectMessage component */}
     </Box>
   );
 };

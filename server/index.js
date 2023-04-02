@@ -64,11 +64,15 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => {
+  .then(async () => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
-    /* ADD DATA ONE TIME */
-    // User.insertMany(users);
-    // Post.insertMany(posts);
+    /* Clear the collections and add data */
+    // await User.deleteMany({});
+    // await Post.deleteMany({});
+    // await User.insertMany(users);
+    // await Post.insertMany(posts);
   })
   .catch((error) => console.log(`${error} did not connect`));
+
+  

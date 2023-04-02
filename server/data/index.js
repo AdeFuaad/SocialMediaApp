@@ -14,9 +14,9 @@ const userIds = [
 export const users = [
   {
     _id: userIds[0],
-    firstName: "test",
-    lastName: "me",
-    email: "aaaaaaa@gmail.com",
+    firstName: "Rio",
+    lastName: "Dayung",
+    email: "riod@gmail.com",
     password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p11.jpeg",
     friends: [],
@@ -46,9 +46,9 @@ export const users = [
   },
   {
     _id: userIds[2],
-    firstName: "Some",
-    lastName: "Guy",
-    email: "someguy@gmail.com",
+    firstName: "Max",
+    lastName: "Verstappen",
+    email: "maxv@gmail.com",
     password: "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     picturePath: "p4.jpeg",
     friends: [],
@@ -62,9 +62,9 @@ export const users = [
   },
   {
     _id: userIds[3],
-    firstName: "Whatcha",
-    lastName: "Doing",
-    email: "whatchadoing@gmail.com",
+    firstName: "Tina",
+    lastName: "Sam",
+    email: "tinasam@gmail.com",
     password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p6.jpeg",
     friends: [],
@@ -94,8 +94,8 @@ export const users = [
   },
   {
     _id: userIds[5],
-    firstName: "Harvey",
-    lastName: "Dunn",
+    firstName: "Steve",
+    lastName: "Harvey",
     email: "harveydunn@gmail.com",
     password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
     picturePath: "p7.jpeg",
@@ -150,7 +150,7 @@ export const posts = [
     lastName: "Ralph",
     location: "New York, CA",
     description: "Some really long random description",
-    picturePath: "post1.jpeg",
+    picturePath: "post8.jpeg",
     userPicturePath: "p3.jpeg",
     likes: new Map([
       [userIds[0], true],
@@ -158,17 +158,13 @@ export const posts = [
       [userIds[3], true],
       [userIds[4], true],
     ]),
-    comments: [
-      "random comment",
-      "another random comment",
-      "yet another random comment",
-    ],
+    comments: [],
   },
   {
     _id: new mongoose.Types.ObjectId(),
     userId: userIds[3],
-    firstName: "Whatcha",
-    lastName: "Doing",
+    firstName: "Tina",
+    lastName: "Sam",
     location: "Korea, CA",
     description:
       "Another really long random description. This one is longer than the previous one.",
@@ -180,12 +176,7 @@ export const posts = [
       [userIds[1], true],
       [userIds[2], true],
     ]),
-    comments: [
-      "one more random comment",
-      "and another random comment",
-      "no more random comments",
-      "I lied, one more random comment",
-    ],
+    comments: [],
   },
   {
     _id: new mongoose.Types.ObjectId(),
@@ -203,19 +194,13 @@ export const posts = [
       [userIds[3], true],
       [userIds[5], true],
     ]),
-    comments: [
-      "one more random comment",
-      "I lied, one more random comment",
-      "I lied again, one more random comment",
-      "Why am I doing this?",
-      "I'm bored",
-    ],
+    comments: [],
   },
   {
     _id: new mongoose.Types.ObjectId(),
     userId: userIds[5],
-    firstName: "Harvey",
-    lastName: "Dunn",
+    firstName: "Steve",
+    lastName: "Harvey",
     location: "Los Angeles, CA",
     description:
       "This is the last really long random description. This one is longer than the previous one. Man I'm bored. I'm going to keep typing until I run out of things to say.",
@@ -226,14 +211,7 @@ export const posts = [
       [userIds[6], true],
       [userIds[3], true],
     ]),
-    comments: [
-      "I lied again, one more random comment",
-      "Why am I doing this?",
-      "I'm bored",
-      "I'm still bored",
-      "All I want to do is play video games",
-      "I'm going to play video games",
-    ],
+    comments: [],
   },
   {
     _id: new mongoose.Types.ObjectId(),
@@ -251,13 +229,7 @@ export const posts = [
       [userIds[5], true],
       [userIds[7], true],
     ]),
-    comments: [
-      "I lied again, one more random comment",
-      "Why am I doing this?",
-      "Man I'm bored",
-      "What should I do?",
-      "I'm going to play video games",
-    ],
+    comments: [],
   },
   {
     _id: new mongoose.Types.ObjectId(),
@@ -274,12 +246,6 @@ export const posts = [
       [userIds[2], true],
     ]),
 
-    comments: [
-      "Can I play video games now?",
-      "No let's actually study",
-      "Never mind, I'm going to play video games",
-      "Stop it.",
-      "Michael, stop it.",
-    ],
+    comments: [],
   },
 ];
