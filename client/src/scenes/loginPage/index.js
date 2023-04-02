@@ -12,7 +12,7 @@ const LoginPage = () => {
       justifyContent="center"
       alignItems="center"
       sx={{
-        background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+        background: "linear-gradient(90deg, rgba(2,106,158,1) 47%, rgba(195,72,245,1) 100%, rgba(109,9,121,1) 100%);",
       }}
     >
       <Box
@@ -23,8 +23,8 @@ const LoginPage = () => {
         top={0}
         bgcolor={theme.palette.background.alt}
       >
-        <Typography fontWeight="bold" fontSize="32px" color="primary">
-          FreeGram
+        <Typography fontWeight="bold" fontSize="32px" color="#5077be">
+        DevPal
         </Typography>
       </Box>
 
@@ -36,7 +36,7 @@ const LoginPage = () => {
         bgcolor={theme.palette.background.alt}
       >
        <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-    Welcome to FreeGram!
+    Welcome to DevPal!
   </Typography>
         <Form />
       </Box>

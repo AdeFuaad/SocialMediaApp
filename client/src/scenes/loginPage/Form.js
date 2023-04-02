@@ -240,8 +240,8 @@ const Form = () => {
               sx={{
                 m: "2rem 0",
                 p: "1rem",
-                backgroundColor: palette.primary.main,
-                color: palette.background.alt,
+                backgroundColor:"#5077be",
+                color: "#000",
                 "&:hover": { color: palette.primary.main },
               }}
             >
