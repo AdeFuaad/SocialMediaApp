@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Box, useMediaQuery } from "@mui/material";
 import { useSelector } from "react-redux";
-import Navbar from "scenes/navbar";
+import Navbar from "../../scenes/navbar";
 
-import MyPostWidget from "scenes/widgets/MyPostWidget";
-import PostsWidget from "scenes/widgets/PostsWidget";
-import FriendListWidget from "scenes/widgets/FriendListWidget";
+import MyPostWidget from "../../scenes/widgets/MyPostWidget";
+import PostsWidget from "../../scenes/widgets/PostsWidget";
+import FriendListWidget from "../../scenes/widgets/FriendListWidget";
 
-import DirectMessage from "components/DirectMessage"; // Import the DirectMessage component
+import DirectMessage from "../../components/DirectMessage"; // Import the DirectMessage component
 import UserWidget from '../../scenes/widgets/UserWidget';
 
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
 
@@ -24,7 +25,7 @@ const LoginPage = () => {
         bgcolor={theme.palette.background.alt}
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
-          FreeGram
+          DevPal
         </Typography>
       </Box>
 
@@ -36,7 +37,7 @@ const LoginPage = () => {
         bgcolor={theme.palette.background.alt}
       >
        <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-    Welcome to FreeGram!
+    Welcome to DevPal!
   </Typography>
         <Form />
       </Box>
