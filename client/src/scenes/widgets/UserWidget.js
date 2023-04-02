@@ -1,3 +1,4 @@
+import React from "react";
 import {
   ManageAccountsOutlined,
   EditOutlined,
@@ -6,13 +7,13 @@ import {
 } from "@mui/icons-material";
 import { Box, Typography, Divider, IconButton, TextField, useTheme } from "@mui/material";
 
-import UserImage from "components/UserImage";
-import FlexBetween from "components/FlexBetween";
-import WidgetWrapper from "components/WidgetWrapper";
+import UserImage from "../../components/UserImage";
+import FlexBetween from "../../components/FlexBetween";
+import WidgetWrapper from "../../components/WidgetWrapper";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import SocialProfile from 'components/SocialProfile';
+import SocialProfile from '../../components/SocialProfile';
 
 
 const UserWidget = ({ userId, picturePath }) => {

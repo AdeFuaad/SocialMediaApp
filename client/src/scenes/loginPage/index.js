@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
 
@@ -23,6 +24,7 @@ const LoginPage = () => {
         top={0}
         bgcolor={theme.palette.background.alt}
       >
+
         <Typography fontWeight="bold" fontSize="32px" color="#5077be">
         DevPal
         </Typography>

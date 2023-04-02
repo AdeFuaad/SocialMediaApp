@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import {
   Box,
@@ -18,10 +19,9 @@ import {
   Close,
 } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
-import { setMode, setLogout } from "state";
+import { setMode, setLogout } from "../../state";
 import { useNavigate } from "react-router-dom";
-import FlexBetween from "components/FlexBetween";
-import { Link } from 'react-router-dom';
+import FlexBetween from "../../components/FlexBetween";
 
 const Navbar = () => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
@@ -55,6 +55,7 @@ const Navbar = () => {
           }}
         >
           DevPal
+
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
